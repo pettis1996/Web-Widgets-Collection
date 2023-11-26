@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-form-card {
+    border: 2px solid black;
+    width: 640px;
+    height: 800px;
+    border-radius: 25px;
+}
+
+.card-header {
+    padding: 25px;
+    border-bottom: 2px solid black;
+    text-align: center;
+}
