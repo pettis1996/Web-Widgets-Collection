@@ -23,19 +23,23 @@
             <form class="card-body">
                 <div class="card-input-field">
                     <label for="customerName">Full Name</label>
-                    <input required type="text" name="customerName" id="customerName">
+                    <input required type="text" name="customerName" id="customerName" maxlength="120">
                 </div>
                 <div class="card-input-field">
                     <label for="customerEmail">Your Email</label>
-                    <input required type="email" name="customerEmail" id="customerEmail">
+                    <input required type="email" name="customerEmail" id="customerEmail" maxlength="100">
                 </div>
                 <div class="card-input-field">
                     <label for="customerPhone">Your Phone No.</label>
-                    <input type="tel" name="customerPhone" id="customerPhone">
+                    <input type="tel" name="customerPhone" id="customerPhone" maxlength="50">
                 </div>
                 <div class="card-input-field">
                     <label for="customerMessage">Your Message</label>
-                    <textarea required name="customerMessage" id="customerMessage" cols="30" rows="20"></textarea>
+                    <textarea required name="customerMessage" id="customerMessage" cols="30" rows="20" maxlength="500"></textarea>
+                </div>
+                <div class="card-input-field">
+                    <label for="customerFileAttachment">File Attachment</label>
+                    <input type="file" name="customerFileAttachment" id="customerFileAttachment">
                 </div>
                 <button class="submit-btn">
                     Submit
