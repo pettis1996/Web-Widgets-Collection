@@ -8,6 +8,11 @@ body {
     align-items: center;
     justify-content: center;
     font-family: 'Montserrat', sans-serif;
+    background-image: linear-gradient(to right top, #274b74, #214d89, #284d9c, #3c4bad, #5845ba, #6e44c4, #8542cc, #9c3ed3, #af47de, #c250e8, #d659f3, #e963fd);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: white;    
 }
 
 .contact-form-container {
@@ -17,14 +22,14 @@ body {
 }
 
 .contact-form-card {
-    border: 2px solid black;
+    border: 2px solid white;
     width: 640px;
     border-radius: 25px;
 }
 
 .card-header {
     padding: 25px;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid white;
     text-align: center;
 }
 
@@ -47,6 +52,8 @@ body {
     padding: 10px 8px;
     font-weight: 600;
     border-radius: 14px;
+    background-color: transparent;
+    border: 1px solid white;
 }
 
 .card-input-field textarea {
@@ -54,17 +61,22 @@ body {
     font-weight: 600;
     border-radius: 14px;
     font-size: 16px;
+    background-color: transparent;
+    border: 1px solid white;
 }
 
 .submit-btn {
     border-radius: 25px;
-    padding: 20px 60px;
+    padding: 15px;
+    width: 250px;
     font-weight: 900;
     background-color: transparent;
+    border: 1px solid white;
+    color: white;
 }
 
 .card-footer {
     padding: 25px;
-    border-top: 2px solid black;
+    border-top: 2px solid white;
     text-align: center;
 }
