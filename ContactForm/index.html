@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Contact Form Container -->
     <div class="contact-form-container">
         <!-- Contact Form Card Section -->
         <div class="contact-form-card">
@@ -19,9 +20,27 @@
                     Fill in the contact form below and we will get back to you!
                 </small>
             </div>
-            <div class="card-body">
-
-            </div>
+            <form class="card-body">
+                <div class="card-input-field">
+                    <label for="customerName">Full Name</label>
+                    <input required type="text" name="customerName" id="customerName">
+                </div>
+                <div class="card-input-field">
+                    <label for="customerEmail">Your Email</label>
+                    <input required type="email" name="customerEmail" id="customerEmail">
+                </div>
+                <div class="card-input-field">
+                    <label for="customerPhone">Your Phone No.</label>
+                    <input type="tel" name="customerPhone" id="customerPhone">
+                </div>
+                <div class="card-input-field">
+                    <label for="customerMessage">Your Message</label>
+                    <textarea required name="customerMessage" id="customerMessage" cols="30" rows="20"></textarea>
+                </div>
+                <button class="submit-btn">
+                    Submit
+                </button>
+            </form>
             <div class="card-footer">
 
             </div>
@@ -29,6 +48,7 @@
         </div>
         <!-- Contact Form Card Section End -->    
     </div>
+    <!-- Contact Form Container End -->
 
     <script src="app.js"></script>
 </body>
