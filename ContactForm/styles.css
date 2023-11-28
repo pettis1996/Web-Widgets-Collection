@@ -23,8 +23,35 @@ body {
 
 .contact-form-card {
     border: 2px solid white;
-    width: 640px;
     border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+}
+
+.card-left {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: 0 150px;
+    border-right: 2px solid white;
+}
+
+.back-btn {
+    border-radius: 25px;
+    padding: 15px;
+    width: 250px;
+    font-weight: 900;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+}
+
+.card-right {
+    padding: 0 50px;
 }
 
 .card-header {
@@ -46,6 +73,11 @@ body {
     flex-direction: column;
     font-weight: 800;
     width: 350px;
+}
+
+.card-input-field label {
+    padding-left: 5px;
+    margin-bottom: 5px;
 }
 
 .card-input-field input {
@@ -73,6 +105,7 @@ body {
     background-color: transparent;
     border: 1px solid white;
     color: white;
+    cursor: pointer;
 }
 
 .card-footer {
