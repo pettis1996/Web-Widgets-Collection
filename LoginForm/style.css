@@ -105,15 +105,21 @@ body {
 
   .separator-line {
     flex: 1;
-    height: 1px;
+    height: 2px;
     width: 200px;
-    background-color: #5a5a5a; /* Color of the line */
+    background-color: #cacaca; 
+    background: #e0e0e0;
+    box-shadow: inset 2px 2px 4px #cacaca,
+                inset -2px -2px 4px #ffffff;
   }
 
   .separator-dot {
     width: 10px;
     height: 10px;
-    background-color: #5a5a5a; /* Color of the dot */
+    background-color: #5a5a5a; 
     border-radius: 50%;
-    margin: 0 10px; /* Adjust the margin as needed */
+    margin: 0 10px;
+    background: linear-gradient(145deg, #cacaca, #f0f0f0);
+    box-shadow:  29px 29px 65px #5a5a5a,
+                -29px -29px 65px #ffffff;
   }
