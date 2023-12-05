@@ -21,6 +21,7 @@ body {
     width: 550px;
     height: 700px;
     border-radius: 50px;
+    border-radius: 50px;
     background: #e0e0e0;
     box-shadow:  20px 20px 60px #bebebe,
                 -20px -20px 60px #ffffff;
@@ -45,6 +46,11 @@ body {
     border: none;
 }
 
+.form-input input:focus {
+    outline: none;
+    border-inline: 2px solid white;
+}
+
 .form-input label {
     position: absolute;
     top: 0;
@@ -62,6 +68,7 @@ body {
 .form-input:not(:has(:placeholder-shown)) label {
     translate: 0.025rem -1.5rem;
     color: #030104;
+    font-weight: 600;
 }
 
 .buttons {
@@ -85,4 +92,28 @@ body {
     background: linear-gradient(145deg, #cacaca, #f0f0f0);
     box-shadow:  5px 5px 10px #5a5a5a,
                  -5px -5px 10px #ffffff;
+    font-weight: 700;
 }
+
+.separator {
+    display: flex;
+    align-items: center;
+    margin: 20px 0; 
+    padding: 0 50px;
+    gap: 10px;
+  }
+
+  .separator-line {
+    flex: 1;
+    height: 1px;
+    width: 200px;
+    background-color: #5a5a5a; /* Color of the line */
+  }
+
+  .separator-dot {
+    width: 10px;
+    height: 10px;
+    background-color: #5a5a5a; /* Color of the dot */
+    border-radius: 50%;
+    margin: 0 10px; /* Adjust the margin as needed */
+  }
