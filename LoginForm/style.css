@@ -19,12 +19,16 @@ body {
     align-items: center;
     justify-content: center;
     width: 550px;
-    height: 700px;
+    padding: 50px 0;
     border-radius: 50px;
     border-radius: 50px;
     background: #e0e0e0;
     box-shadow:  20px 20px 60px #bebebe,
                 -20px -20px 60px #ffffff;
+}
+
+.form-header {
+    text-align: center;
 }
 
 .form-input {
@@ -122,4 +126,8 @@ body {
     background: linear-gradient(145deg, #cacaca, #f0f0f0);
     box-shadow:  29px 29px 65px #5a5a5a,
                 -29px -29px 65px #ffffff;
+  }
+
+  .form-footer {
+    text-align: center;
   }
