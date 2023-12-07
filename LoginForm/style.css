@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap');
 
+:root {
+    --color-github: #171515;
+    --color-twitter: #000000;
+    --color-instagram: #ef5a92;
+    --color-facebook: #3b5a9b;
+  }
+
 * {
     font-family: 'Montserrat', serif;
 }
@@ -105,9 +112,9 @@ body {
     margin: 20px 0; 
     padding: 0 50px;
     gap: 10px;
-  }
+}
 
-  .separator-line {
+.separator-line {
     flex: 1;
     height: 2px;
     width: 200px;
@@ -115,9 +122,9 @@ body {
     background: #e0e0e0;
     box-shadow: inset 2px 2px 4px #cacaca,
                 inset -2px -2px 4px #ffffff;
-  }
+}
 
-  .separator-dot {
+.separator-dot {
     width: 10px;
     height: 10px;
     background-color: #5a5a5a; 
@@ -126,8 +133,112 @@ body {
     background: linear-gradient(145deg, #cacaca, #f0f0f0);
     box-shadow:  29px 29px 65px #5a5a5a,
                 -29px -29px 65px #ffffff;
-  }
+}
 
-  .form-footer {
+.form-footer {
     text-align: center;
-  }
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.social-icon,
+.tooltip {
+    display: block;
+}
+
+.social-icon {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin: 0 0.2rem;
+    border-radius: 50%;
+    cursor: pointer;
+    font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-size: 2.5rem;
+    text-decoration: none;
+    transition: all 0.15s ease;
+}
+
+.social-icon:hover {
+    color: #fff;
+}
+
+.social-icon:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(-50%, -150%);
+}
+
+.social-icon:active {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5) inset;
+}
+
+.social-icon--twitter {
+        background: var(--color-twitter);
+        color: #fff;
+}
+
+.social-icon--twitter:hover {
+        background: var(--color-twitter);
+        color: #fff;
+}
+
+.social-icon--facebook {
+    background: var(--color-facebook);
+    color: #fff;
+}
+
+.social-icon--instagram {
+    background: var(--color-instagram);
+    color: #fff;
+}
+
+.social-icon--github {
+    background: var(--color-github);
+    color: #fff;
+}
+
+.social-icon svg {
+    position: relative;
+    bottom: 4px;
+}
+
+.tooltip {
+    position: absolute;
+    background-color: #5a5a5a;
+    color: #000000;
+    top: 40%;
+    left: 50%;
+    padding: 0.8rem 1rem;
+    border-radius: 40px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    opacity: 0;
+    pointer-events: none;
+    text-transform: uppercase;
+    transform: translate(-50%, -100%);
+    transition: all 0.3s ease;
+    z-index: 1;
+    background: #e0e0e0;
+    box-shadow: inset 2px 2px 4px #cacaca,
+                inset -2px -2px 4px #ffffff;
+}
+
+.tooltip:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 1px;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: solid;
+    border-width: 10px 10px 0 10px;
+    border-color: transparent;
+    transform: translate(-50%, 100%);
+}
